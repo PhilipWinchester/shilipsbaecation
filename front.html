@@ -1,55 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>It's Shilukas Birthday!</title>
+    <title>Shilip's Baecation</title>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-      <main >
-        <section class ="index-banner">
-          <div class="vertical-center">
-            <h2> It's Shilukas Birthday! </h2>
+    <header class="site-header">
+      <a href="front.html" class="logo">Shilip's <span>Baecation</span> 💗</a>
+    </header>
+
+    <main>
+
+      <section class="hero">
+        <div class="hero-eyebrow">Happy Birthday, Shilu</div>
+        <h1 class="hero-title">Pick Our Next Beacation</h1>
+        <button type="button" class="btn btn-secondary note-btn" onclick="openModal('noteModal')">A note from Phile 💌</button>
+        <div class="scroll-cue">↓ scroll for the shortlist ↓</div>
+      </section>
+
+      <div class="wrapper">
+
+        <section class="section">
+          <h2 class="section-title">Some of the adventures we've already had!</h2>
+          <p class="section-sub"></p>
+          <div class="memories-strip">
+            <img class="memory-photo reveal" src="img/us/us1.jpg" alt="Us">
+            <img class="memory-photo reveal" src="img/us/us2.jpg" alt="Us">
+            <img class="memory-photo reveal" src="img/us/us3.jpg" alt="Us">
+            <img class="memory-photo reveal" src="img/us/us4.MP.jpg" alt="Us">
           </div>
         </section>
-        <div class="wrapper">
-        <section class="index-links">
-          <div class="camb-box">
-            <a href="camb.html">
-              <h3>Cambridge</h3>
+
+        <section class="section">
+          <h2 class="section-title">The Shortlist</h2>
+          <p class="section-sub">Tap a destination for more info. A serious decision to make!</p>
+          <div class="destinations-grid">
+            <a class="dest-card box-bruges reveal" href="bruges.html">
+              <div class="dest-card-content">
+                <div class="dest-card-title">Bruges</div>
+                <div class="dest-card-teaser">Canals, chocolate, and beer.</div>
+                <div class="dest-card-cta">Explore Bruges</div>
+              </div>
+            </a>
+            <a class="dest-card box-sdowns reveal" href="sdowns.html">
+              <div class="dest-card-content">
+                <div class="dest-card-title">South Downs</div>
+                <div class="dest-card-teaser">Chalk hills, cosy pubs, and a cute cottage.</div>
+                <div class="dest-card-cta">Explore South Downs</div>
+              </div>
+            </a>
+            <a class="dest-card box-ystad reveal" href="ystad.html">
+              <div class="dest-card-content">
+                <div class="dest-card-title">Ystad</div>
+                <div class="dest-card-teaser">Swedish spa, sea swims, and sauna.</div>
+                <div class="dest-card-cta">Explore Ystad</div>
+              </div>
+            </a>
+            <a class="dest-card box-shuzenji reveal" href="shuzenji.html">
+              <div class="dest-card-content">
+                <div class="dest-card-title">Shuzenji</div>
+                <div class="dest-card-teaser">Onsen towns, ryokans, and futons.</div>
+                <div class="dest-card-cta">Explore Shuzenji</div>
+              </div>
+            </a>
+            <a class="dest-card box-wens reveal" href="wens.html">
+              <div class="dest-card-content">
+                <div class="dest-card-title">Wensleydale</div>
+                <div class="dest-card-teaser">Yorkshire Dales, cosy pubs, and cheese.</div>
+                <div class="dest-card-cta">Explore Wensleydale</div>
+              </div>
             </a>
           </div>
-          <div class="london-box">
-            <a href="london.html">
-              <h3> London </h3>
-            </a>
-          </div>
-          <div class="cots-box">
-              <a href="cots.html">
-                <h3>Cotswolds</h3>
-              </a>
-            </div>
         </section>
 
       </div>
+
     </main>
+
+    <div class="modal-overlay" id="noteModal">
+      <div class="modal-card note-card">
+        <button class="modal-close" onclick="closeModal('noteModal')" aria-label="Close">×</button>
+        <div class="note-heading">Dear Shilu,</div>
+        <p class="note-body">Before you decide if you want Yorkshire cheese or Japanese onsens, I want to say happy birthday! I was so moved by everything you did for my birthday, it literally brought me to tears. This is the first birthday of yours we're celebrating together, and I want to make it special for you too. So after Moulan Rouge, the Natural History Museum, and Himi, here is a lil info for you to help you pick our next beacation. Over the years, I am sure we'll visit all of these, but you pick the next one. I love you 🌚❤️🌝 </p>
+        <div class="note-sign">Phile</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 
 </html>
-<!-- Dani Krossing -->
-<!-- right click on any page to get htlm of that bit -->
-<!-- ids are good as you can make links that jump to verious bits -->
-<!-- https://www.youtube.com/watch?v=itYS4zNR0Uk -->
-<!--  can use a div inside an anchor -->
-<!--  rgba is good for colours, as we can us alpha value-->
-<!--  ep 15 explains why it is better to use css to insert figures-->
-<!--  @media is used so that website looks good on different browsers -->
-<!--  hover is good, as it changes format as we hover over something -->
-<!--  can probably use a div with an image and text as an anchor?  -->
-<!--  w3 has good templates  -->
-<!--  ep 18, mentions background images  -->

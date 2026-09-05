@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ystad — Shilip's Baecation</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a href="front.html" class="logo">Shilip's <span>Baecation</span> 💗</a>
+    </header>
+
+    <main>
+
+      <section class="dest-hero fig-ystad-4">
+        <div class="dest-hero-inner">
+          <div class="dest-hero-tag">Option No. 3</div>
+          <h1 class="dest-hero-title">Ystad</h1>
+        </div>
+      </section>
+
+      <div class="wrapper">
+
+        <div class="quote-block">
+          <span class="mark">“</span>
+          <p>My endzzz! Nice town on the southern tip of Sweden, and there's a really nice spa hotel there I've wanted to go to for aaages. It's right by the sea so we could do a swim and maybe a sauna after 👀, and since it's only about an hour from my parents, we could easily tie it in whenever we're over next year.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item fig-ystad-1 reveal"></div>
+          <div class="gallery-item fig-ystad-2 reveal"></div>
+          <div class="gallery-item fig-ystad-3 reveal"></div>
+          <div class="gallery-item placeholder reveal">
+            <span class="icon">📸</span>
+            Placeholder for after we've been
+          </div>
+        </div>
+
+        <div class="todo-card">
+          <h2>Things to do</h2>
+          <ul>
+            <li>Stay at Ystad Saltsjöbad</li>
+            <li>Spa and treatments</li>
+            <li>Walks along the beach and sauna</li>
+          </ul>
+        </div>
+
+        <div class="video-frame">
+          <div class="video-inner">
+            <video autoplay muted loop playsinline poster="img/ystad/ystad1.jpeg">
+              <source src="movies/ystadmov.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <section class="decision">
+          <a class="btn btn-secondary" href="front.html">Back to options 😕</a>
+          <button type="button" class="btn btn-primary" onclick="openModal('dateModal')">Take me here 😁</button>
+        </section>
+
+        <div class="next-link">
+          <a href="shuzenji.html">Next up: Shuzenji →</a>
+        </div>
+
+      </div>
+
+    </main>
+
+    <div class="modal-overlay" id="dateModal">
+      <div class="modal-card">
+        <button class="modal-close" onclick="closeModal('dateModal')" aria-label="Close">×</button>
+        <h3>When we go to Ystad?</h3>
+        <p></p>
+        <div class="modal-dates">
+          <label>From <input type="date"></label>
+          <label>To <input type="date"></label>
+        </div>
+        <a class="btn btn-primary" href="ystadres.html">Lock it in 😁</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>

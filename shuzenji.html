@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shuzenji — Shilip's Baecation</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a href="front.html" class="logo">Shilip's <span>Baecation</span> 💗</a>
+    </header>
+
+    <main>
+
+      <section class="dest-hero fig-shuzenji-4">
+        <div class="dest-hero-inner">
+          <div class="dest-hero-tag">Option No. 4</div>
+          <h1 class="dest-hero-title">Shuzenji</h1>
+        </div>
+      </section>
+
+      <div class="wrapper">
+
+        <div class="quote-block">
+          <span class="mark">“</span>
+          <p>Up in the hills of the Izu Peninsula, one of the oldest onsen towns in the country, proper old ryokans, quiet temples, and much less croced than some of the other places we will go to. It sits between Tokyo and Kyoto too, so v convenient for our trip.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item fig-shuzenji-1 reveal"></div>
+          <div class="gallery-item fig-shuzenji-2 reveal"></div>
+          <div class="gallery-item fig-shuzenji-3 reveal"></div>
+          <div class="gallery-item placeholder reveal">
+            <span class="icon">📸</span>
+            Placeholder for after we've been
+          </div>
+        </div>
+
+        <div class="todo-card">
+          <h2>Things to do</h2>
+          <ul>
+            <li>Stay at a ryokan, eat traditional Japanese food and sleep on futons</li>
+            <li>Lots of spa and onsens</li>
+            <li>Visit the old Shuzenji Temple</li>
+          </ul>
+        </div>
+
+        <div class="video-frame">
+          <div class="video-inner">
+            <video autoplay muted loop playsinline poster="img/shuzenji/shuzenji1.jpeg">
+              <source src="movies/shuzenjimov.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <section class="decision">
+          <a class="btn btn-secondary" href="front.html">Back to options 😕</a>
+          <button type="button" class="btn btn-primary" onclick="openModal('dateModal')">Take me here 😁</button>
+        </section>
+
+        <div class="next-link">
+          <a href="wens.html">Next up: Wensleydale →</a>
+        </div>
+
+      </div>
+
+    </main>
+
+    <div class="modal-overlay" id="dateModal">
+      <div class="modal-card">
+        <button class="modal-close" onclick="closeModal('dateModal')" aria-label="Close">×</button>
+        <h3>When we go to Shuzenji?</h3>
+        <p></p>
+        <div class="modal-dates">
+          <label>From <input type="date"></label>
+          <label>To <input type="date"></label>
+        </div>
+        <a class="btn btn-primary" href="shuzenjires.html">Lock it in 😁</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
