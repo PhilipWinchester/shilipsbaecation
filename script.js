@@ -76,7 +76,7 @@ function confirmBooking(destination, redirectUrl, button) {
       button.disabled = true;
       button.textContent = 'Sending...';
     }
-    var websiteLink = window.location.href.replace(/[^/]*$/, 'front.html');
+    var websiteLink = window.location.origin + '/trip/';
     emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
       destination: destination,
       date_from: from,

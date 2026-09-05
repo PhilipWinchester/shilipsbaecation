@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>South Downs — Shilip's Baecation</title>
+    <title>Shuzenji — Shilip's Baecation</title>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
   </head>
 
   <body>
     <header class="site-header">
-      <a href="front.html" class="logo">Shilip's <span>Baecation</span> 💗</a>
+      <a href="../trip/" class="logo">Shilip's <span>Baecation</span> 💗</a>
     </header>
 
     <main>
 
-      <section class="dest-hero fig-sdowns-4">
+      <section class="dest-hero fig-shuzenji-4">
         <div class="dest-hero-inner">
-          <div class="dest-hero-tag">Option No. 2</div>
-          <h1 class="dest-hero-title">South Downs</h1>
+          <div class="dest-hero-tag">Option No. 4</div>
+          <h1 class="dest-hero-title">Shuzenji</h1>
         </div>
       </section>
 
@@ -27,13 +27,13 @@
 
         <div class="quote-block">
           <span class="mark">“</span>
-          <p>Close to where I went to school and where my Eng side of the fam are from! Rolling chalk hills, proper English countryside, and walk a nice bit of the Seven Sisters until my knee is cooked. We'll book a lil cottage and get a cozt pub crawl in!</p>
+          <p>Up in the hills of the Izu Peninsula, one of the oldest onsen towns in the country, proper old ryokans, quiet temples, and much less croced than some of the other places we will go to. It sits between Tokyo and Kyoto too, so v convenient for our trip.</p>
         </div>
 
         <div class="gallery-grid">
-          <div class="gallery-item fig-sdowns-1 reveal"></div>
-          <div class="gallery-item fig-sdowns-2 reveal"></div>
-          <div class="gallery-item fig-sdowns-3 reveal"></div>
+          <div class="gallery-item fig-shuzenji-1 reveal"></div>
+          <div class="gallery-item fig-shuzenji-2 reveal"></div>
+          <div class="gallery-item fig-shuzenji-3 reveal"></div>
           <div class="gallery-item placeholder reveal">
             <span class="icon">📸</span>
             Placeholder for after we've been
@@ -43,27 +43,27 @@
         <div class="todo-card">
           <h2>Things to do</h2>
           <ul>
-            <li>Walk a stretch of the South Downs Way</li>
-            <li>Picnic at Devil's Dyke</li>
-            <li>Watch the sunset from the Seven Sisters cliffs</li>
+            <li>Stay at a ryokan, eat traditional Japanese food and sleep on futons</li>
+            <li>Lots of spa and onsens</li>
+            <li>Visit the old Shuzenji Temple</li>
           </ul>
         </div>
 
         <div class="video-frame">
           <div class="video-inner">
-            <video autoplay muted loop playsinline poster="img/sdowns/sdowns1.jpeg">
-              <source src="movies/sdownsmov.mp4" type="video/mp4">
+            <video autoplay muted loop playsinline preload="auto" poster="../img/shuzenji/shuzenji1.jpeg">
+              <source src="../movies/shuzenjimov.mp4" type="video/mp4">
             </video>
           </div>
         </div>
 
         <section class="decision">
-          <a class="btn btn-secondary" href="front.html">Back to options 😕</a>
+          <a class="btn btn-secondary" href="../trip/">Back to options 😕</a>
           <button type="button" class="btn btn-primary" onclick="openModal('dateModal')">Take me here 😁</button>
         </section>
 
         <div class="next-link">
-          <a href="ystad.html">Next up: Ystad →</a>
+          <a href="../wensleydale/">Next up: Wensleydale →</a>
         </div>
 
       </div>
@@ -73,7 +73,7 @@
     <div class="modal-overlay" id="dateModal">
       <div class="modal-card">
         <button class="modal-close" onclick="closeModal('dateModal')" aria-label="Close">×</button>
-        <h3>When shall we go to the South Downs?</h3>
+        <h3>When shall we go to Shuzenji?</h3>
         <p>Pick some dates — nothing's booked yet, but it'll feel a bit more real.</p>
         <div class="modal-dates">
           <label>From <input type="date" id="date-from"></label>
@@ -84,12 +84,12 @@
           <input type="email" id="date-email" placeholder="you@example.com">
           <small>Get a little booking confirmation email.</small>
         </div>
-        <button type="button" class="btn btn-primary" onclick="confirmBooking('South Downs', 'sdownsres.html', this)">Lock it in 😁</button>
+        <button type="button" class="btn btn-primary" onclick="confirmBooking('Shuzenji', 'booked/', this)">Lock it in 😁</button>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 
 </html>

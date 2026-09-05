@@ -6,12 +6,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
   </head>
 
   <body>
     <header class="site-header">
-      <a href="front.html" class="logo">Shilip's <span>Baecation</span> 💗</a>
+      <a href="../trip/" class="logo">Shilip's <span>Baecation</span> 💗</a>
     </header>
 
     <main>
@@ -51,19 +51,19 @@
 
         <div class="video-frame">
           <div class="video-inner">
-            <video autoplay muted loop playsinline poster="img/wens/wens1.jpeg">
-              <source src="movies/wensmov.mp4" type="video/mp4">
+            <video autoplay muted loop playsinline preload="auto" poster="../img/wens/wens1.jpeg">
+              <source src="../movies/wensmov.mp4" type="video/mp4">
             </video>
           </div>
         </div>
 
         <section class="decision">
-          <a class="btn btn-secondary" href="front.html">Back to options 😕</a>
+          <a class="btn btn-secondary" href="../trip/">Back to options 😕</a>
           <button type="button" class="btn btn-primary" onclick="openModal('dateModal')">Take me here 😁</button>
         </section>
 
         <div class="next-link">
-          <a href="bruges.html">Next up: Bruges →</a>
+          <a href="../bruges/">Next up: Bruges →</a>
         </div>
 
       </div>
@@ -84,12 +84,12 @@
           <input type="email" id="date-email" placeholder="you@example.com">
           <small>Get a little booking confirmation email.</small>
         </div>
-        <button type="button" class="btn btn-primary" onclick="confirmBooking('Wensleydale', 'wensres.html', this)">Lock it in 😁</button>
+        <button type="button" class="btn btn-primary" onclick="confirmBooking('Wensleydale', 'booked/', this)">Lock it in 😁</button>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 
 </html>
