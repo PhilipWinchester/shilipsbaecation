@@ -1,0 +1,566 @@
+/*
+Reset Stylesheet
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* My Code */
+
+* {
+text-decoration: none; /* remove underline from link */
+}
+
+
+body {
+  background-color: #f3f3f3;
+}
+
+video {
+  margin: 16px 16px 16px 16px;
+  width: calc(100% - 32px);
+}
+
+/*INDEX*/
+.index-banner{
+  width: 100%;
+  height: 100vh; /* 90 of one full screen */
+  background-image:  url(img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+  display: table;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.index-banner h2 {
+  font-family: Catamaran;
+  font-size: 60px;
+  line-height: 70px;
+  color: #fff; /* white */
+  text-align: center;
+  font-weight: 800;
+  text-shadow: 2px 2px 8px #111; /* shadow  to text, 8px is the blur of the shadow */
+}
+
+.camb-box {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/camb/camb1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+
+.camb-box h3 {
+  font-family: Catamaran;
+  font-size: 40px;
+  color: #fff; /* white */
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 2px 2px 8px #111; /* shadow  to text, 8px is the blur of the shadow */
+  line-height: 200px;  /* puts in middle */
+}
+
+.london-box {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/london/london1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+
+.london-box h3 {
+  font-family: Catamaran;
+  font-size: 40px;
+  color: #fff; /* white */
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 2px 2px 8px #111; /* shadow  to text, 8px is the blur of the shadow */
+  line-height: 200px;  /* puts in middle */
+}
+
+.cots-box {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/cots/cots1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+
+.cots-box:hover {
+  box-shadow: 2px 2px 8px #888888;
+}
+
+.london-box:hover {
+  box-shadow: 2px 2px 8px #888888;
+}
+
+.camb-box:hover {
+  box-shadow: 2px 2px 8px #888888;
+}
+
+.cots-box h3 {
+  font-family: Catamaran;
+  font-size: 40px;
+  color: #fff; /* white */
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 2px 2px 8px #111; /* shadow  to text, 8px is the blur of the shadow */
+  line-height: 200px;  /* puts in middle */
+}
+
+.place-name h2 {
+  font-family: Catamaran;
+  font-size: 50px;
+  color: #111; /* white */
+  text-align: center;
+  font-weight: 600;
+  line-height: 120px;  /* puts below header */
+}
+
+.place-image {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 16px from each side */
+  height: 200px;
+  size: cover;
+}
+
+.things-to-do {
+  margin: 16px 40px 0px;
+  width: calc(100% - 48px); /* Have 16px*3  */
+}
+
+.things-to-do h2 {
+  font-family: Catamaran;
+  font-size: 30px;
+  line-height: 70px;
+  color: #111;
+  text-align: center;
+  font-weight: 600;
+}
+
+.things-to-do ul li {
+  font-family: Catamaran;
+  font-size: 20px;
+  line-height: 28px;
+  color: #111;
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+
+.quote {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 16px from each side */
+}
+
+.quote h3 {
+  font-family: Catamaran;
+  font-size: 20px;
+  line-height: 30px;
+  color: #111;
+  text-align: left;
+  font-weight: 200;
+}
+
+.pick div {
+  margin: 16px 16px 0px;
+  width: calc(50% - 32px); /* Have 16px from each side */
+  height: 50px;
+  float: left;
+}
+
+.pick div:hover {
+  margin: 16px 16px 0px;
+  width: calc(50% - 32px); /* Have 16px from each side */
+  height: 50px;
+  background-color: #888;
+  float: left;
+}
+
+.pick div a h3 {
+  font-family: Catamaran;
+  color: #111;
+  font-size: 15px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 200;
+}
+
+
+/* Figures */
+.camb-fig1 {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/camb/camb1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+.camb-fig2 {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/camb/camb2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+.camb-fig3 {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/camb/camb3.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+.cots-fig1 {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/cots/cots2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+.cots-fig2 {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/cots/cots3.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+.cots-fig3 {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/cots/cots1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+.london-fig1 {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/london/london2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+.london-fig2 {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/london/london1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+.london-fig3 {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+  height: 200px;
+  background-image: url(img/london/london3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* will fit inside container */
+}
+
+.passwordfield {
+  margin: 150px 16px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+}
+
+.passwordfield p {
+  font-family: Catamaran;
+  font-size: 30px;
+  line-height: 45px;
+  color: #111; /* white */
+  text-align: center;
+  font-weight: 100;
+}
+
+.passwordfield a {
+  font-family: Catamaran;
+  font-size: 20px;
+  line-height: 20px;
+  color: #111; /* white */
+  text-align: center;
+  font-weight: 100;
+}
+
+.res {
+  margin: 16px 16px;
+  width: calc(100% - 32px); /* Have 10px from each side */
+}
+
+.password-form {
+  font-family: Catamaran;
+  font-size: 1000px;
+  line-height: 45px;
+  color: #fff; /* white */
+  text-align: center;
+  font-weight: 100;
+}
+
+input[type=button] {
+  background-color: #888;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Catamaran;
+  font-size: 13px;
+}
+
+.res p {
+  font-family: Catamaran;
+  font-size: 30px;
+  line-height: 45px;
+  color: #; /* white */
+  text-align: center;
+  font-weight: 100;
+}
+
+.password-form p {
+  color: #111;
+  font-family: Catamaran;
+  font-size: 13px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  input[type=button] {
+    background-color: #888;
+    border: none;
+    color: #111;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 50px 2px;
+    cursor: pointer;
+    font-family: Catamaran;
+    font-size: 30px;
+  }
+
+  .password-form p {
+    color: #111;
+    font-family: Catamaran;
+    font-size: 30px;
+  }
+
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+
+  }
+
+  .index-banner{
+    height: 500px; /* one full screen */
+  }
+
+  .camb-box {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+
+  .london-box {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+
+  .cots-box {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+
+  .camb-box h3 {
+    line-height: 225px;  /* puts in middle */
+  }
+  .london-box h3 {
+    line-height: 225px;  /* puts in middle */
+  }
+  .cots-box h3 {
+    line-height: 225px;  /* puts in middle */
+  }
+
+  .place-image {
+    margin: 20px 10px 0px;
+    width: calc(33% - 20px); /* Have 16px from each side */
+    height: 200px;
+    float: left;
+  }
+
+  .quote {
+    margin: 275px 0px 16px 16px;
+    width: calc(100% - 32px); /* Have 16px from each side */
+  }
+
+  .camb-fig1 {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+  .camb-fig2 {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+  .camb-fig3 {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+  .cots-fig1 {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+  .cots-fig2 {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+  .cots-fig3 {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+  .london-fig1 {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+  .london-fig2 {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+  .london-fig3 {
+    margin: 20px 10px 0px;
+    height: 225px;
+    width: calc(33% - 20px) !important; /* Have 10px from each side */
+    float: left;
+  }
+}
+}
