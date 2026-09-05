@@ -73,16 +73,22 @@
     <div class="modal-overlay" id="dateModal">
       <div class="modal-card">
         <button class="modal-close" onclick="closeModal('dateModal')" aria-label="Close">×</button>
-        <h3>When we go to Ystad?</h3>
-        <p></p>
+        <h3>When shall we go to Ystad?</h3>
+        <p>Pick some dates — nothing's booked yet, but it'll feel a bit more real.</p>
         <div class="modal-dates">
-          <label>From <input type="date"></label>
-          <label>To <input type="date"></label>
+          <label>From <input type="date" id="date-from"></label>
+          <label>To <input type="date" id="date-to"></label>
         </div>
-        <a class="btn btn-primary" href="ystadres.html">Lock it in 😁</a>
+        <div class="modal-email">
+          <label for="date-email">Your email (optional)</label>
+          <input type="email" id="date-email" placeholder="you@example.com">
+          <small>Get a little booking confirmation email.</small>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="confirmBooking('Ystad', 'ystadres.html', this)">Lock it in 😁</button>
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
     <script src="script.js"></script>
   </body>
 
